@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AXXESS-2023", "AXXESS-2023.csproj", "{A59A6974-5956-44D9-BE83-C110FF897C64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A59A6974-5956-44D9-BE83-C110FF897C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59A6974-5956-44D9-BE83-C110FF897C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59A6974-5956-44D9-BE83-C110FF897C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59A6974-5956-44D9-BE83-C110FF897C64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50B4C7C5-AD8D-491C-BB4E-72AE11636D8B}
+	EndGlobalSection
+EndGlobal
