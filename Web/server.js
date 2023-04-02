@@ -11,7 +11,7 @@ const login = require('./routes/login')
 const account = require('./routes/account')
 const admin = require('./routes/admin')
 
-mongoose.connect('mongodb://localhost/sample-store', (err, data) => {
+mongoose.connect('mongodb://localhost/sample-store', {useNewUrlParser: true, useUnifiedTopology: true },(err, data,) => {
 	if (err){
 		console.log('DB Connection Failed')
 		return
