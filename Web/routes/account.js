@@ -77,14 +77,14 @@ router.post('/resetpassword', (req, res, next) => {
 		user.save()
 
 		const mailgun = Mailgun({
-			apiKey: 'key-fa4ce184d539c7d972494bea80b49449',
-			domain: 'sandboxe7e494111c714208822e21ad788c0de3.mailgun.org'
+			apiKey: '2c64fa7be4a70d81f0f8e8ce39b6ae29-d51642fa-bca0b0fd',
+			domain: 'sandboxb994192ba9414a55b382344fe48f62f1.mailgun.org'
 		})
 
 		const data = {
 			to: req.body.email,
-			from: 'dkwon@turbo360.co',
-			sender: 'Sample Store',
+			from: 'flowAid@support.com',
+			sender: 'Flow Aid',
 			subject: 'Password Reset Request',
 			html: 'Please click <a style="color:red" href="http://localhost:5000/account/password-reset?nonce='+user.nonce+'&id='+user._id+'">HERE</a> to reset your password. This link is valid for 24 hours.'
 		}
@@ -208,6 +208,3 @@ router.post('/newpassword', (req, res, next) => {
 })
 
 module.exports = router
-
-
-

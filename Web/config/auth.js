@@ -29,9 +29,9 @@ module.exports = (passport) => {
 				return next(new Error('User Not Found'))
 
 			// check password:
-			if (bcrypt.compareSync(password, user.password) == false)			
+			if(bcrypt.compareSync(password,user.password== false)){
 				return next(new Error('Incorrect Password'))
-
+			}
 			return next(null, user)
 		})
 	})
@@ -52,9 +52,9 @@ module.exports = (passport) => {
 				return next(new Error('User already exists, please log in.'))
 
 			// create the new user:
-			const hashedPw = bcrypt.hashSync(password, 10)
+			const hashedPw = bcryptjs.hashSync(password, 10)
 			let isAdmin = false
-			if (email.indexOf('@zenva.com') != -1)
+			if (email.indexOf('@AXXES.com') != -1)
 				isAdmin = true
 
 			User.create({email:email, password:hashedPw, isAdmin:isAdmin}, (err, user) => {
@@ -67,5 +67,5 @@ module.exports = (passport) => {
 	})
 
 	passport.use('localRegister', localRegister)
-}
 
+}

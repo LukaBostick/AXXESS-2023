@@ -1,10 +1,10 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
+const passport = require('passport');
 
-router.get('/', (req, res, next) => {
-	
-	res.render('home', null)
+router.get('/', passport.authenticate('localLogin'), (req, res) => {
+    res.render('home', null);
+});
 
-})
-
-module.exports = router
+// export the file  into server.js and use the router instead of hard coding it
+module.exports = router;
